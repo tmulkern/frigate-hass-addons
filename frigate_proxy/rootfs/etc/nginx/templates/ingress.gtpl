@@ -4,7 +4,7 @@ server {
     include /etc/nginx/includes/server_params.conf;
 
     location / {
-        allow   172.30.32.2;
+        allow   172.30.32.0/24;
         deny    all;
 
         proxy_pass http://backend;
